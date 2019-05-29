@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Leiturista</string>
+    <string name="observa_o">Observação:</string>
+    <string name="situa_o">Situação</string>
+    <string name="medidor">Medidor:</string>
+    <string name="leiturista">Leiturista:</string>
+    <string name="voltar">Voltar</string>
+    <string name="avan_ar">Avançar</string>
+    <string name="informe_o_c_digo_do_leiturista">Informe o código do leiturista:</string>
+    <string name="bem_vindo_ao_leiturista">Bem-vindo ao Leiturista!</string>
+    <string name="enable_camera">Habilite as permissões</string>
+</resources>

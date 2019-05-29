@@ -1,2 +1,2 @@
-# Leiturista-Mobile
-Sistema  Android para o leiturista
+# Leiturista
+Exemplo de Aplicação Java  para Android

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.eti.tassio.leiturista.CaptureActivity">
+
+    <TextView
+        android:id="@+id/msgLecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="23dp"
+        android:text="Leiturista:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtLecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/msgLecturer"
+        android:layout_alignBottom="@+id/msgLecturer"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/msgLecturer"
+        android:layout_toRightOf="@+id/msgLecturer"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:text=""
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/msgMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/msgLecturer"
+        android:layout_alignStart="@+id/msgLecturer"
+        android:layout_below="@+id/msgLecturer"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Medidor:" />
+
+    <TextView
+        android:id="@+id/txtMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/msgMeter"
+        android:layout_alignBottom="@+id/msgMeter"
+        android:layout_toEndOf="@+id/msgLecturer"
+        android:layout_toRightOf="@+id/msgLecturer"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:text=""
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/msgSituation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/msgMeter"
+        android:layout_alignStart="@+id/msgMeter"
+        android:layout_below="@+id/txtMeter"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Situação:" />
+
+    <TextView
+        android:id="@+id/txtSituation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/msgSituation"
+        android:layout_alignBottom="@+id/msgSituation"
+        android:layout_toEndOf="@+id/msgLecturer"
+        android:layout_toRightOf="@+id/msgLecturer"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:text=""
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/msglocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/msgSituation"
+        android:layout_alignStart="@+id/msgSituation"
+        android:layout_below="@+id/txtSituation"
+        android:layout_marginTop="20dp"
+        android:text="Localização:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/msglocation"
+        android:layout_alignBottom="@+id/msglocation"
+        android:layout_toEndOf="@+id/msglocation"
+        android:layout_toRightOf="@+id/msglocation"
+        android:inputType="textCapCharacters"
+        android:text=""
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btCapture"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Capturar"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btNextOpt"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btCapture"
+        android:layout_alignBottom="@+id/btCapture"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Avançar"
+        android:textSize="20dp" />
+
+</RelativeLayout>
