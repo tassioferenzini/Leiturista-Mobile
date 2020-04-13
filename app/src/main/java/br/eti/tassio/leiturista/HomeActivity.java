@@ -21,7 +21,8 @@ public class HomeActivity extends AppCompatActivity {
     private View.OnClickListener clicknext = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent situationIntent = new Intent(HomeActivity.this, SituationActivity.class);
+            Intent situationIntent = new Intent(HomeActivity.this,
+                    SituationActivity.class);
             EditText cod = (EditText) findViewById(R.id.cod);
             String txtCod = cod.getText().toString();
             if (!txtCod.matches("")) {
