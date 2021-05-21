@@ -13,7 +13,6 @@ import android.widget.TextView;
 public class SituationActivity extends AppCompatActivity {
 
     private Spinner spinner;
-    //private static final String[] paths = {"item 1", "item 2", "item 3"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

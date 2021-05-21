@@ -55,13 +55,12 @@ public class CaptureActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                File photoDirectory = new File(Environment.getExternalStorageDirectory(), "Leiturista");
+                File photoDirectory = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), "Leiturista");
                 if (!photoDirectory.exists()) {
                     photoDirectory.mkdir();
                 }
                 String photoName = getPhotName();
                 File imgFile = new File(photoDirectory, photoName);
-                //Uri uriPhoto = Uri.fromFile(imgFile);
                 Uri uriPhoto = FileProvider.getUriForFile(CaptureActivity.this, BuildConfig.APPLICATION_ID + ".provider",imgFile);
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, uriPhoto);
                 startActivityForResult(cameraIntent, 0);
